@@ -10,6 +10,8 @@
 		82F6E83F18AEE8CF00EDF63C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F6E83E18AEE8CF00EDF63C /* Foundation.framework */; };
 		82F6E84218AEE8CF00EDF63C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F6E84118AEE8CF00EDF63C /* main.m */; };
 		82F6E84618AEE8CF00EDF63C /* FontGen.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82F6E84518AEE8CF00EDF63C /* FontGen.1 */; };
+		82F6E84E18AEE95400EDF63C /* FontGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F6E84D18AEE95400EDF63C /* FontGenerator.m */; };
+		82F6E85018AEEA0300EDF63C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F6E84F18AEEA0300EDF63C /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		82BB90B119FAC68F00E8A384 /* fontawesome-webfont.ttf.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "fontawesome-webfont.ttf.zip"; sourceTree = "<group>"; };
 		82F6E83B18AEE8CF00EDF63C /* FontGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FontGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F6E83E18AEE8CF00EDF63C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		82F6E84118AEE8CF00EDF63C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82F6E84418AEE8CF00EDF63C /* FontGen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FontGen-Prefix.pch"; sourceTree = "<group>"; };
 		82F6E84518AEE8CF00EDF63C /* FontGen.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FontGen.1; sourceTree = "<group>"; };
+		82F6E84C18AEE95400EDF63C /* FontGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontGenerator.h; sourceTree = "<group>"; };
+		82F6E84D18AEE95400EDF63C /* FontGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontGenerator.m; sourceTree = "<group>"; };
+		82F6E84F18AEEA0300EDF63C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F6E85018AEEA0300EDF63C /* AppKit.framework in Frameworks */,
 				82F6E83F18AEE8CF00EDF63C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +72,7 @@
 		82F6E83D18AEE8CF00EDF63C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82F6E84F18AEEA0300EDF63C /* AppKit.framework */,
 				82F6E83E18AEE8CF00EDF63C /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -76,6 +84,8 @@
 				82F6E84118AEE8CF00EDF63C /* main.m */,
 				82F6E84518AEE8CF00EDF63C /* FontGen.1 */,
 				82F6E84318AEE8CF00EDF63C /* Supporting Files */,
+				82F6E84C18AEE95400EDF63C /* FontGenerator.h */,
+				82F6E84D18AEE95400EDF63C /* FontGenerator.m */,
 			);
 			path = FontGen;
 			sourceTree = "<group>";
@@ -83,6 +93,7 @@
 		82F6E84318AEE8CF00EDF63C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				82BB90B119FAC68F00E8A384 /* fontawesome-webfont.ttf.zip */,
 				82F6E84418AEE8CF00EDF63C /* FontGen-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F6E84E18AEE95400EDF63C /* FontGenerator.m in Sources */,
 				82F6E84218AEE8CF00EDF63C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +263,7 @@
 				82F6E84B18AEE8CF00EDF63C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
